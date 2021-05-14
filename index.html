@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/style.css">
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+     <title>Survey Form</title>
+</head>
+
+<body>
+     
+     <div class="main">
+          <h1 id="title">📝Customer Feedback Survey📝</h1>
+          <p id="description">Thanks for being our customer!🙏<br>We'd appreciate if you take just a few minutes of your time to share your thoughts, so we can improve our products or services.🤗<br>
+               Thank You for taking our quick survey!💖</p>
+          <div class="main-content">
+               <div class="fore-content">
+                    <form id="survey-form">
+                         <label for="name" id="name-label">Name</label>
+                         <input id="name" type="text" required placeholder="Enter Your Name" />
+                         <label for="email" id="email-label">Email</label>
+                         <input id="email" type="email" required placeholder="Enter Your Email" />
+                         <label for="number" id="number-label">Phone</label>
+                         <input id="number" type="number" required min="0" max="10000000000" placeholder="Enter Your Phone" />
+                         <label for="gender" id="gender-label">Gender</label>
+                         <input id="gender" type="gender" required placeholder="Enter Your Gender" />
+                         <label for="product" id="product-label">Name of Product/Service</label>
+                         <input id="product" type="product" required placeholder="Enter Product/Service">
+
+                         <label for="dropdown">Which Option Describes Your Current Role? </label>
+                         <select id="dropdown">
+                              <option value="student">Student</option>
+                              <option value="full-time-learner">Full Time Learner</option>
+                              <option value="full-time-job">Full Time Job</option>
+                              <option value="prefer-not-to-say">Prefer Not To Say</option>
+                              <option value="other">Other</option>
+                         </select>
+
+                         <div id="rating">
+                              <p>Please Rate The Product/Service From 1 to 10</p>
+                              <input type="radio" name="rate" id="1" value="1" />
+                              <label for="1">1</label>
+                              <input type="radio" name="rate" id="2" value="2" />
+                              <label for="2">2</label>
+                              <input type="radio" name="rate" id="3" value="3" />
+                              <label for="3">3</label>
+                              <input type="radio" name="rate" id="4" value="4" />
+                              <label for="4">4</label>
+                              <input type="radio" name="rate" id="5" value="5" />
+                              <label for="5">5</label>
+                              <input type="radio" name="rate" id="6" value="6" />
+                              <label for="6">6</label>
+                              <input type="radio" name="rate" id="7" value="7" />
+                              <label for="7">7</label>
+                              <input type="radio" name="rate" id="8" value="8" />
+                              <label for="8">8</label>
+                              <input type="radio" name="rate" id="9" value="9" />
+                              <label for="9">9</label>
+                              <input type="radio" name="rate" id="10" value="10" />
+                              <label for="10">10</label>
+                         </div>
+
+                         <fieldset>
+                              <legend>Would You Recommend This Product/Service?</legend>
+                              <input type="radio" name="action" checked id="definitely" value="definitely" />
+                              <label for="definitely">Definitely</label><br>
+                              <input type="radio" name="action" id="maybe" value="maybe" />
+                              <label for="maybe">Maybe</label><br>
+                              <input type="radio" name="action" id="not-sure" value="not-sure" />
+                              <label for="not-sure">Not Sure</label><br>
+                         </fieldset>
+
+                         <p>How Did You Hear About Us?</p>
+                         <input type="checkbox" id="social" name="social" value="social" />
+                         <label for="social">Social Network</label><br>
+                         <input type="checkbox" id="search" name="search" value="search" />
+                         <label for="search">Search Engine</label><br>
+                         <input type="checkbox" id="event" name="event" value="event" />
+                         <label for="event">Event</label><br>
+                         <input type="checkbox" id="blog" name="blog" value="blog" />
+                         <label for="blog">Blog</label><br>
+                         <input type="checkbox" id="advertisement" name="advertisement" value="advertisement" />
+                         <label for="advertisement">Addvertisement</label><br>
+                         <input type="checkbox" id="friend" name="friend" value="friend" />
+                         <label for="friend">Friend</label><br>
+                         <input type="checkbox" id="others" name="others" value="others" />
+                         <label for="others">Others (Please Specify) : </label>
+                         
+                         <input type="text" id="detail" class="no-outline" name="detail" placeholder="Specify Here..."/><br>
+
+                         <label for="comment">Any Comments Or Suggestions?</label>
+                         <textarea rows="4" cols="50" id="comment">Enter Your Comment Here...</textarea>
+
+                         <button type="submit" id="submit">Submit</button>
+                    </form>
+                    <hr>
+                    <footer>Page desinged with 💖 by Anish Kumar Sinha<br>&copy Copyright 2021</footer>
+               </div>
+          </div>
+     </div>
+     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
