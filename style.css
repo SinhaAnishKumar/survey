@@ -2,8 +2,10 @@ body{
      font-family: 'Comfortaa', cursive;
 }
 
-.main{
+.parent{
+     max-width: 100%;
      background-image: url(./assets/background.jpg);
+     background-repeat: no-repeat;
      position: fixed;
      top: 0;
      left: 0;
@@ -12,6 +14,11 @@ body{
      color: #ffffff;
      overflow-y: scroll;
      font-size: 15px;
+}
+
+.main{
+     max-width: 850px;
+     margin: 0 auto;
 }
 
 .main::after {
@@ -41,7 +48,7 @@ body{
 
 .main-content {
      background-color: rgb(0, 0, 0, .3);
-     max-width: 650px;
+     max-width: 75%;
      display: flex;
      flex-direction: column;
      padding: 40px;
